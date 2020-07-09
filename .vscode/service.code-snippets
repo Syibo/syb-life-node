@@ -1,0 +1,28 @@
+{
+	// Place your vue 工作区 snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and
+	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope
+	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is
+	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders.
+	// Placeholders with the same ids are connected.
+	// Example:
+	"service": {
+		"prefix": "service",
+		"body": [
+			"import { BaseService } from 'egg-cool-service';\n",
+			"/**",
+			"* 服务类描述",
+			"*/",
+			"export default class SysConfService extends BaseService {\n",
+				"\t/**",
+				"\t* 方法描述",
+				"\t* @param param",
+				"\t*/",
+				"\tasync xxx(param) {",
+					"\t\tconsole.log(param)",
+				"\t}",
+			"}"
+		],
+		"description": "cool-admin service代码片段 node后端"
+	}
+}

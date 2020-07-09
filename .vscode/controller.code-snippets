@@ -1,0 +1,37 @@
+{
+	// Place your vue 工作区 snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and
+	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope
+	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is
+	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders.
+	// Placeholders with the same ids are connected.
+	// Example:
+	"controller": {
+		"prefix": "controller",
+		"body": [
+			"import { BaseController } from 'egg-cool-controller';",
+			"import router from 'egg-cool-router';\n",
+
+			"/**",
+			"* 控制器功能描述",
+			"*/",
+			"@router.prefix('/xxx/xxx', ['add', 'delete', 'update', 'info', 'list', 'page'])",
+			"export default class XXXController extends BaseController {",
+			"\tinit() {",
+			"\t\tthis.setEntity(this.ctx.repo.xxx);",
+			"\t\tthis.setService(this.ctx.service.xxx);",
+			"\t}\n",
+
+				"\t/**",
+				"\t* 其他接口",
+				"\t*/",
+				"\t@router.post('/xxx')",
+				"\tasync xxx() {",
+				"\t\tawait this.OpService.xxx(this.getBody());",
+				"\t\tthis.res();",
+				"\t}",
+			"}",
+		],
+		"description": "cool-admin controller代码片段 node后端"
+	}
+}
