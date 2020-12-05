@@ -18,4 +18,7 @@ export default class WebArticle extends BaseEntity {
     // 文章类型
     @Column()
     artType: string;
+    // 日记图片
+    @Column()
+    picture: string;
 }
